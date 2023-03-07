@@ -1,5 +1,4 @@
 ﻿using Infra.DTOs;
-using Infra.Entities;
 using Infra.Interface;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,7 +11,7 @@ namespace SmartInnovationTeste.Controllers
 
         IPersonService _personService;
 
-        PersonController(IPersonService personService)
+        public PersonController(IPersonService personService)
         {
             _personService = personService;
         }
